@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    align-items: center;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.innercontainer1 h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 20%;
+    padding: 12rem;
+}
+
+.navbar{
+    display: block;
+    margin-left: 1rem;
+
+}
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+.navbar li {
+    display: inline;
+    margin: 47px;
+    color: #696969;
+
+}
+
+.navbar li:hover{
+    color: black;
+    transition: .2s;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 20px;
+    left: 46px;
+    height: 3px;
+    width: 0;
+    background: #D66700;
+}
+
+.navbar a.active{
+    color: black;
+}
+
+.navbar a.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 20px;
+    left: 46px;
+    height: 3px;
+    width: 35%;
+    background: #D66700;
+}
+.navbar a:nth-child(2):hover::before{
+    width: 45%;
+}
+
+
+.navbar a:nth-child(3):hover::before{
+    width: 35%;
+}
+
+
+.navbar a:nth-child(4):hover::before{
+    width: 50%;
+}
+
+.navbar a:last-child:hover::before{
+    width: 58%;
+}
+
+.btn{
+    margin: 20px;
+}
+
+.btn button{
+    border-radius: 20px;
+    margin: 15px;
+    border: none;
+}
+
+
+.btn1{
+    font-weight: 500;
+    font-size: 16px;    
+    height: 40px;
+    width: 82px;
+    color: black;
+    background-color: #D0D5D8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn1:hover{
+    font-weight: 500;
+    font-size: 20px;
+    height: 50px;
+    width: 90px;
+    color: black;
+    background-color: #D0D5D8;
+    transition: .4s;
+}
+
+.btn2{
+    font-weight: 500;
+    font-size: 16px;
+    height: 42px;
+    width: 98px;
+    color: white;
+    background-color: #D66700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn2:hover{
+    font-weight: 500;
+    font-size: 16px;
+    height: 52px;
+    width: 108px;
+    color: white;
+    background-color: #D66700;
+    transition: .4s;
+}
+
+.btn img{
+    padding-left: 20px;
+}
+
+.container2{
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    background-color: black;
+    top: 20rem;
+}
+
+.innercontainer2{
+    position: absolute;
+    left: 47rem;
+}
+
+.innercontainer2img{
+    position: absolute;
+    left: 100rem;
+    top: 0.7rem;
+}
+
+.innercontainer2img img{
+    height: 19rem;
+}
+
+.container2 h1{ 
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+}
+
+.container2 button{
+    position: absolute;
+    margin-left: 7.5rem;
+    top: 8rem;
+    font-family: 'poppins';
+    font-size: 1em;
+    padding: 2vh;
+    border-radius: 1.5rem;
+    background-color: #D66700;
+    color: white;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    top: 37rem;
+    background-color: #D66700;
+    height: 60%;
+    width: 100%;
+}
+
+.element1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    padding: 2rem 15rem;
+    color: white;
+}
+
+
+.element1 button{
+    padding: 0.9rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.element1 h3{
+    padding-top: 0.7rem;
+}
+
+.socials img{
+    padding: 1rem 1rem;
+}
+
+.element2{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 5rem;
+    left: 35rem;
+    display: flex;
+}
+
+.mobv{
+    display: none;
+}
+
+.element2 h3{
+    position: relative;
+    top: -2.5rem;
+    left: 12rem;
+    color: white;
+}
+
+.element2 p{
+    margin: 2rem;
+    color: white;
+}
+
+.element2 img{
+    margin-right: 1rem;
+}
+
+.element3{
+    position: absolute;
+    top: 2.5rem;
+    left: 85rem;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    color: white;
+}
+
+.element3 p{
+    font-size: 1.5ch;
+}
+
+.element3 h5{
+    font-size: 1.9ch;
+}
+
+.element4{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    position: absolute;
+    top: 22rem;
+    left: 84rem;
+    color: white;
+}
+
+.element4 h3{
+    font-size: 2ch;
+}
+
+.element4 p{
+    font-size: 1.6ch;
+    text-transform: uppercase;
+}
+
+.element4 input{
+    padding: 1rem;
+    border: none;
+}
+
+.element4 button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.element5{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 1ch;
+    padding: 2rem;
+    color: white;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px){
+.container1{
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    }
+
+.innercontainer1 h1{
+    font-size: 1.54em;
+    padding-left: 2rem;
+}
+
+.navbar{
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    left: 27rem;
+}
+
+.btn button{
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+}
+
+.btn1{
+    font-weight: 500;
+    font-size: 14px;    
+    height: 35px;
+    width: 70px;
+    color: black;
+    background-color: #D0D5D8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn1:hover{
+    font-weight: 500;
+    font-size: 16px;    
+    height: 45px;
+    width:  75px;
+    color: black;
+    background-color: #D0D5D8;
+    transition: .4s ease;
+}
+
+.btn2{
+    font-weight: 500;
+    font-size: 12px;
+    height: 35px;
+    width: 80px;
+    color: white;
+    background-color: #D66700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn2:hover{
+    font-weight: 500;
+    font-size: 14px;
+    height: 45px;
+    width: 82px;
+    color: white;
+    background-color: #D66700;
+    transition: .4s ease; 
+}
+
+.btn img{
+    padding-left: 20px;
+}
+
+.container2{
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    background-color: black;
+    top: 20rem;
+}
+
+.container2 h1{ 
+    padding-left: 10rem;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+}
+
+.innercontainer2{
+    position: absolute;
+    left: 4rem;
+    top: 2rem;
+    z-index: 9;
+}
+
+.innercontainer2img{
+    position: absolute;
+    left: 32rem;
+    top: 0.7rem;
+}
+
+.innercontainer2img img{
+    height: 19rem;
+}
+
+
+.container2 button{
+    position: absolute;
+    margin-left: 6rem;
+    top:  6rem;
+    left: 9rem;
+    font-family: 'poppins';
+    font-size: 0.8em;
+    padding: 2vh;
+    border-radius: 1.5rem;
+    background-color: #D66700;
+    color: white;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    top: 35rem;
+    background-color: #D66700;
+    height: 68%;
+    width: 100%;
+}
+
+.element1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    padding: 1rem ;
+    color: white;
+}
+
+
+.element1 button{
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.element1 h3{
+    padding-top: 0.7rem;
+    font-size: 1rem;
+}
+
+.element1 p{
+    font-size: 0.7rem;
+}
+.socials img{
+    padding: 1rem 1rem;
+    height: 1.4rem;
+}
+
+.mobv{
+    display: none;
+}
+
+.element2{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    display: flex;
+}
+
+.element2 h3{
+    font-size: 1rem;
+    position: relative;
+    top: -2.5rem;
+    left: 10.7rem;
+    color: white;
+}
+
+.element2 p{
+    margin: 2rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.element2 img{
+    margin-right: 1rem;
+}
+
+.element3{
+    position: absolute;
+    top: 1.5rem;
+    left: 34rem;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    color: white;
+}
+
+.element3 p{
+    font-size: 0.7em;
+}
+
+.element3 h5{
+    font-size: 1rem;
+}
+
+.element3 h3{
+    font-size: 1rem
+}
+.element4{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    position: absolute;
+    top: 20rem;
+    left: 28rem;
+    color: white;
+}
+
+.element4 h3{
+    font-size: 2ch;
+}
+
+.element4 p{
+    font-size: 1.6ch;
+    text-transform: uppercase;
+}
+
+.element4 input{
+    padding: 1rem;
+    border: none;
+}
+
+.element4 button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.element5{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 1ch;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+}
+
+@media only screen and (max-width:320px){
+
+.container1{
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    }
+
+.innercontainer1 h1{
+    font-size: 1.3em;
+    padding-left: 2rem;
+}
+
+.navbar{
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    left: 15rem;
+}
+
+.btn button{
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+}
+
+.btn1{
+    font-weight: 500;
+    font-size: 14px;    
+    height: 35px;
+    width: 70px;
+    color: black;
+    background-color: #D0D5D8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn1:hover{
+    font-weight: 500;
+    font-size: 16px;    
+    height: 45px;
+    width:  75px;
+    color: black;
+    background-color: #D0D5D8;
+    transition: .4s ease;
+}
+
+.btn2{
+    font-weight: 500;
+    font-size: 12px;
+    height: 35px;
+    width: 80px;
+    color: white;
+    background-color: #D66700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn2:hover{
+    font-weight: 500;
+    font-size: 14px;
+    height: 45px;
+    width: 82px;
+    color: white;
+    background-color: #D66700;
+    transition: .4s ease; 
+}
+
+.btn img{
+    padding-left: 2px;
+}
+
+.container2{
+    position: absolute;
+    height: 30%;
+    width: 100em;
+    background-color: black;
+    top: 20rem;
+}
+
+.container2 h1{ 
+    padding-left: 9rem;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+}
+
+.innercontainer2{
+    position: absolute;
+    left: 0.1rem;
+    top: 2rem;
+    z-index: 9;
+}
+
+.innercontainer2img{
+    position: absolute;
+    left: 18rem;
+    top: 0.7rem;
+}
+
+.innercontainer2img img{
+    height: 19rem;
+}
+
+
+.container2 button{
+    position: absolute;
+    margin-left: 6rem;
+    top:  6rem;
+    left: 7rem;
+    font-family: 'poppins';
+    font-size: 0.8em;
+    padding: 2vh;
+    border-radius: 1.5rem;
+    background-color: #D66700;
+    color: white;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    top: 35rem;
+    background-color: #D66700;
+    height: 68%;
+    width: 100%;
+}
+
+.element1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    padding: 1rem ;
+    color: white;
+}
+
+
+.element1 button{
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.element1 h3{
+    padding-top: 0.7rem;
+    font-size: 1rem;
+}
+
+.element1 p{
+    font-size: 0.7rem;
+}
+.socials img{
+    padding: 1rem 1rem;
+    height: 1.4rem;
+}
+
+.mobv{
+    display: none;
+}
+
+.element2{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    display: flex;
+}
+
+.element2 h3{
+    font-size: 1rem;
+    position: relative;
+    top: -2.5rem;
+    left: 10.7rem;
+    color: white;
+}
+
+.element2 p{
+    margin: 2rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.element2 img{
+    margin-right: 1rem;
+}
+
+.element3{
+    position: absolute;
+    top: 1.5rem;
+    left: 34rem;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    color: white;
+}
+
+.element3 p{
+    font-size: 0.7em;
+}
+
+.element3 h5{
+    font-size: 1rem;
+}
+
+.element3 h3{
+    font-size: 1rem;
+}
+.element4{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    position: absolute;
+    top: 20rem;
+    left: 28rem;
+    color: white;
+}
+
+.element4 h3{
+    font-size: 2ch;
+}
+
+.element4 p{
+    font-size: 1.6ch;
+    text-transform: uppercase;
+}
+
+.element4 input{
+    padding: 1rem;
+    border: none;
+}
+
+.element4 button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.element5{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 1ch;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    color: white;
+}
+}
